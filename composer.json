@@ -72,8 +72,4 @@
     "minimum-stability": "stable",
     "prefer-stable": true
 
-    "scripts": {
-  "start": "php artisan serve --host=0.0.0.0 --port=10000"
-  }
-
 }
