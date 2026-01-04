@@ -14,9 +14,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', Beranda::class)->middleware(['auth'])->name('home');
-Route::get('/user', User::class)->middleware(['auth'])->name('user');
-Route::get('/laporan', Laporan::class)->middleware(['auth'])->name('laporan');
-Route::get('/produk', Produk::class)->middleware(['auth'])->name('produk');
-Route::get('/transaksi', Transaksi::class)->middleware(['auth'])->name('transaksi');
+Route::get('/home', Beranda::class)->name('home');
+Route::get('/user', User::class)->name('user');
+Route::get('/laporan', Laporan::class)->>name('laporan');
+Route::get('/produk', Produk::class)->name('produk');
+Route::get('/transaksi', Transaksi::class)->name('transaksi');
 Route::get('/cetak', ['App\Http\Controllers\HomeController','cetak']);
